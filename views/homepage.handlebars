@@ -1,0 +1,10 @@
+  {{#each posts as |post|}}
+  <article class="post">
+      <div class="title">
+        <a href="{{post.post_url}}" target="_blank">{{post.title}}   by {{post.user.username}} on {{post.created_at}}</a>
+      </div>
+      <div class="meta">
+        <p>{{post.blog}}</p>
+      </div>
+    </article>
+  {{/each}}
