@@ -1,0 +1,15 @@
+<section>
+  {{#each posts as |post|}}
+  <article class="post">
+      <div class="title">
+        <h3><a href="/dashboard/edit/{{id}}">{{post.title}}</a> by {{post.user.username}} on {{format_date post.created_at}}</h3>
+      </div>
+    </article>
+  {{/each}}
+
+
+  <footer class="add-post">
+    <a href="/add" class="btn"><button>Add</button></a>
+  </footer>
+</section>
+

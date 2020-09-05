@@ -85,16 +85,31 @@
 
   nav a {
     color: darkblue;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 15px;
+    display: inline;
+    font-size: 1.5em;
+  }
+
+  .logout {
+    color: darkblue;
+    background-color: grey;
     text-decoration: none;
     display: inline;
     font-size: 1.5em;
   }
 
   nav a:hover {
-    color: #3486eb;
+    color: white;
+  }
+  .logout:hover {
+    color: white;
   }
 
   header h1 {
+    border-radius: 10px;
+    border: 2px solid darkblue;
     color:  darkblue;
     background-color: white;
     display: block;
@@ -103,7 +118,15 @@
   }
   
   .login-form {
-    align-content: center;
+    display: block;
+    clear: left;
+    width: 250px;
+    text-align: left;
+    margin: 10px;
+  }
+
+  input {
+    display: block;
   }
   
   main {
@@ -111,6 +134,13 @@
     padding: 2% 4%;
   }
   
+  button {
+    margin: 5px 0;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+  }
+
   /*
   .btn-no-style {
     background: none;
@@ -172,15 +202,27 @@
     margin-bottom: .5%;
     opacity: .6;
   }
-  
-  .new-post-form input {
-    width: 300px;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
   */
+  .new-post-form input {
+    width: 350px;
+  }
+  #post-blog {
+    width: 600px;
+    height: 100px;
+  }
+
+  .edit-post-form input {
+    width: 350px;
+  }
+
+  .edit-post {
+    width: 350px;
+    height: 100px;
+  }
+  
+  .comment-form {
+    width: 350px;
+  }
 
   footer {
     border-top: 1px solid #ccc;

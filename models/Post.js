@@ -39,7 +39,7 @@ Post.init(
         allowNull: false
       },
       blog: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(500),
         allowNull: false,
       },
       user_id: {

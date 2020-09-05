@@ -2,6 +2,13 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
+
+
+router.get('/add', function(req,res){
+  res.render('add-post');
+})
+
+
 router.get('/', (req, res) => {
   Post.findAll({
       attributes: [
@@ -84,10 +91,13 @@ router.get('/post/:id', (req, res) => {
 
       // serialize the data
       const post = dbPostData.get({ plain: true });
-
+      const comment = post.comments[0].comment_text
+      const date = post.comments[0].created_at
       // pass data to template
-      res.render('single-post', {
+      res.render('comments', {
         post,
+        comment,
+        date,
         loggedIn: req.session.loggedIn
       });
     })

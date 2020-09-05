@@ -8,7 +8,7 @@ N/A
 
 ## Description
 This project is a CMS-style blog site
-- The user is presented with a homepage, which includes existing blog posts if any; navigation links for the homepage and the dashboard; and an option to log in.
+- The user is presented with a homepage, which includes existing blog posts if any; navigation links for the homepage and the dashboard; and an option to log in or signup.
 - When the user clicks on the homepage, they are taken to the homepage.
 - When the user clicks on the other links in the navigation, they are prompted to either sign up or sign in.
 - When the user chooses to sign up, they are prompted to create a username and password.

@@ -11,18 +11,20 @@
 <body>
   <div class="wrapper">
     <header>
+      <h1>Tech Blog</h1>
       <nav>
         <a href="/">Home</a>
-        <a href="/">Dashboard</a>
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
+        <a href="/dashboard">Dashboard</a>
+        {{else}}
+        <a href="/">Dashboard</a>
+        {{/if}}
+        {{#if loggedIn}}
+        <a href="/" id="logout">Logout</a>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
-        <a href="/signup">SignUp</a>
       </nav>
-      <br>
-      <h1>Tech Blog</h1>
     </header>
    
     <main>
