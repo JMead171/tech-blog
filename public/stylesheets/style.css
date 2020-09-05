@@ -211,6 +211,11 @@
     height: 100px;
   }
 
+  .title {
+    background-color: darkblue;
+    color: rgb(202, 199, 199);
+  }
+
   .edit-post-form input {
     width: 350px;
   }
