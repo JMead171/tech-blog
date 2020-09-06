@@ -13,15 +13,11 @@
         }),
         headers: { 'Content-Type': 'application/json' }
       })
-      // .then((resp) => resp.json()) // Transform the data into json
-      //   .then(function (response) {
-      //   sessionStorage.setItem('user_id', response.user.id)
       if (response.ok) {
           document.location.replace('/dashboard');
           } else {
           document.location.replace('/signup');
           }
-      //})
   }
 }
  

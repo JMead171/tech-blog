@@ -2,13 +2,15 @@
   {{#each posts as |post|}}
   <article class="post">
       <div class="titleII">
-        <h3><a href="/dashboard/edit/{{id}}">{{post.title}}</a> by {{post.user.username}} on {{format_date post.created_at}}</h3>
+        <h3><a href="/dashboard/edit/{{id}}">{{post.title}}                      </a>by {{post.user.username}} on {{format_date post.created_at}}</h3>
+        <br>
       </div>
     </article>
   {{/each}}
 
-
+  <br>
   <footer class="add-post">
+    <br>
     <a href="/add" class="btn"><button>Add</button></a>
   </footer>
 </section>

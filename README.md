@@ -55,6 +55,12 @@ Node.js, Javascript, ORM, API Routes, Express.js, MySQL2, Sequelize, dotenv pack
 
 
 ## Screen Shot
+![image](https://user-images.githubusercontent.com/64744763/92335099-c1ac2600-f061-11ea-8f9c-586361d32e07.png)
+
+
+## Heroku link
+
+
 
 ## Video Walkthrough
 N/A
