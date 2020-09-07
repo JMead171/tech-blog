@@ -2,7 +2,7 @@
   {{#each posts as |post|}}
   <article class="post">
       <div class="titleII">
-        <h3><a href="/dashboard/edit/{{id}}">{{post.title}}</a>by {{post.user.username}} on {{format_date post.created_at}}</h3>
+        <h3 class="left"><a href="/dashboard/edit/{{id}}">{{post.title}}</a><span class="right">by {{post.user.username}} on {{format_date post.created_at}}</span></h3>
         <br>
       </div>
     </article>

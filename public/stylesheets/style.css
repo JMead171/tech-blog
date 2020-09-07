@@ -7,6 +7,8 @@
     --secondary: midnightblue;
     --tertiary: white;
     --quaternary: rgb(255, 241, 241);
+    --quinary: rgb(190, 184, 184);
+    --senary: darkslategrey;
   }
 
   body, html {
@@ -100,25 +102,32 @@
     height: 100px;
   }
 
-  .title {
+  .title h3 {
     border-radius: 5px;
     font-size: 18px;
+    width: 100%;
     background-color: var(--secondary);
     color: var(--quaternary);
   }
 
-  .titleII {
-    color: var(--secondary);
-    justify-content: space-between;
-    background-color: var(--primary);
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .titleII h3 {
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    background-color: var(--quinary);
+    color: var(--senary);
   }
   
-  .titleII h3 a {
-    margin: 0;
-    color: var(--tertiary);
-  }
-  .titleII h3 p {
-    text-align: right;
+  .titleII a {
+    color: var(--senary);
   }
 
   .edit-post-form input {
